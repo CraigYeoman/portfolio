@@ -142,20 +142,20 @@
                     <div id="contact" class="mil-p-90-60">
                         <form class="row align-items-center">
                             <div class="col-lg-6 mil-up">
-                                <input type="text" placeholder="What's your name">
+                                <input type="text" name="user_name" id="user_name" placeholder="What's your name">
                             </div>
                             <div class="col-lg-6 mil-up">
-                                <input type="email" placeholder="Your Email">
+                                <input type="email" name="user_email" id="user_email" placeholder="Your Email">
                             </div>
                             <div class="col-lg-12 mil-up">
-                                <textarea placeholder="Tell us about our project"></textarea>
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
                             </div>
-                            <div class="col-lg-8">
-                                <p class="mil-up mil-mb-30"><span class="mil-accent">*</span> We promise not to disclose your personal information to third parties.</p>
+                            <div id="email-notification" class="col-lg-8">
+                                <p id=""class="mil-up mil-mb-30"></p>
                             </div>
                             <div class="col-lg-4">
                                 <div class="mil-adaptive-right mil-up mil-mb-30">
-                                    <button type="submit" class="mil-btn mil-sm-btn">
+                                    <button name="data" type="button" onclick="SendMail(event)" class="mil-btn mil-sm-btn">
                                         <span>Send message</span>
                                     </button>
                                 </div>
@@ -182,24 +182,24 @@
                 <!-- scrollbar end -->
                 <div class="mil-banner-wrapper" data-depth="1">
                     <div id="swupBg" class="mil-banner-frame">
-                        <img src="img/person/bg-2.jpg" alt="background" class="mil-banner-bg mil-blur">
+                        <img src="" alt="background" class="mil-banner-bg mil-blur">
                     </div>
                 </div>
                 <div class="mil-banner-wrapper" data-depth="0.2">
                     <div id="swupPerson" class="mil-banner-frame">
-                        <img src="img/person/7.png" alt="person" class="mil-banner-person">
+                        <img src="" alt="person" class="mil-banner-person">
                     </div>
                 </div>
                 <div class="mil-flying-skills" data-depth="0.1">
                     <div id="swupSkills" class="mil-skills-frame">
                         <div class="mil-item" style="top: 30%; left: 10%">
-                            <img src="img/logos/1.jpg" alt="logo">
+                            <img src="" alt="logo">
                         </div>
                         <div class="mil-item" style="bottom: 15%; left: 20%">
-                            <img src="img/logos/2.jpg" alt="logo">
+                            <img src="" alt="logo">
                         </div>
                         <div class="mil-item" style="bottom: 45%; right: 15%">
-                            <img src="img/logos/3.jpg" alt="logo">
+                            <img src="" alt="logo">
                         </div>
                         <div class="mil-el mil-addition-el-1">+</div>
                         <div class="mil-el mil-addition-el-2">+</div>
@@ -232,6 +232,15 @@
     <script src="js/plugins/parallax.js"></script>
     <!-- courtney js -->
     <script src="js/main.js"></script>
+    <script src="js/email.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("KrftWVyxZ2uWkUPM8");
+        })();
+        </script>
 
 </body>
 
