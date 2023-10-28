@@ -49,7 +49,7 @@ p.s. I am available for Freelance hire (UI design, web development). email: mill
 
 --------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css");
 /* -------------------------------------------
 
 main
@@ -333,6 +333,7 @@ button
           filter: brightness(110%);
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
+  cursor: pointer;
 }
 
 /* -------------------------------------------
@@ -384,6 +385,15 @@ link
 }
 .mil-link.mil-dark-icon svg {
   background-color: rgb(32, 33, 36);
+}
+
+.anchor-fix {
+  height:60px;
+  width:100%;
+  content:"";
+  display:block;
+  margin:-50px 0 0; /* negative fixed header height */
+  scroll-margin-top: 50px;
 }
 
 /* -------------------------------------------
@@ -1303,10 +1313,10 @@ right banner
 .mil-right-banner .mil-banner-wrapper .mil-banner-frame .mil-banner-person {
   top: 0;
   left: 0;
-  width: 106%;
-  height: 106%;
-  margin-left: -3%;
-  margin-top: -3%;
+  width: 100%;
+  height: 100%;
+  margin-left: 3%;
+  margin-top: 3%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1540,6 +1550,22 @@ about
 
 .mil-sign {
   width: 140px;
+}
+
+.mil-about-picture-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mil-about-picture {
+  height: 255px!important;
+  width: 340px!important;
+  overflow: hidden!important;
+}
+
+.mil-about-picture img{
+  width: auto!important;
+  height: 255px!important;
 }
 
 /* -------------------------------------------
