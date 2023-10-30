@@ -880,6 +880,10 @@ frame
   color: var(--main-color);
 }
 
+.social-icon {
+  height: 24px;
+}
+
 .mil-back-to-top {
   background-color: rgb(255, 255, 255);
   position: fixed;
@@ -1470,7 +1474,7 @@ content banner
   border-radius: 50%;
 }
 .mil-banner-sm .mil-banner-title {
-  padding: 60px 0 90px;
+  padding: 60px 0 60px;
 }
 .mil-banner-sm.mil-center {
   -webkit-box-align: center;
@@ -2154,12 +2158,15 @@ project breadcrumps
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  
 }
 .mil-breadcrumbs-project li {
   list-style-type: none;
+  margin: 3px;
+  
 }
 .mil-breadcrumbs-project li:after {
-  content: "/";
+
   margin: 0 15px;
   color: rgb(32, 33, 36);
 }
@@ -2172,9 +2179,14 @@ project breadcrumps
   white-space: nowrap;
   -webkit-transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+  align-items: center;
+  display: flex;
 }
 .mil-breadcrumbs-project li a:hover {
   color: var(--main-color);
+}
+.mil-breadcrumbs-project li a img {
+  margin-right: 8px;
 }
 
 .mil-breadcrumbs-project li:last-child:after {
